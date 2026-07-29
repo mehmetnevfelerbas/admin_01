@@ -32,4 +32,15 @@ class UsersController
 
         return view('pages.users.detail');
     }
+
+    public function toggleStatus($id)
+    {
+        $user = User::findOrFail($id);
+
+      
+        $user->status = ($user->status == 1) ? 0 : 1;
+        $user->save();
+
+        return back()->with('success', 'Kullanıcı onay durumu güncellendi.');
+    }
 }

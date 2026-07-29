@@ -4,7 +4,7 @@
             <div class="col-6 text-start">
                 <p class="mb-0">
                   
-                    <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>MEHMET NEVFEL </strong></a> <a class="text-muted" href="https://adminkit.io/" target="_blank"></a>&copy;
+                    <a class="deneme1" href="#" target="_blank"><strong>MEHMET NEVFEL </strong></a> <a class="deneme1" href="#" target="_blank"></a>&copy;
                
                     <a class="deneme" target="blank" ><strong>DENEME &copy</strong>
                 </p>
@@ -19,8 +19,11 @@
     <style>
 .deneme{
 
-    color: red
-}
+    color:mediumblue;
+    }
 
+.deneme1{
+    color:mediumblue 
+}
     </style>
 </footer>

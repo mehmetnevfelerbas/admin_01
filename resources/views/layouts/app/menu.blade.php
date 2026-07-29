@@ -1,12 +1,12 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="index.html">
+        <a class="sidebar-brand" href="{{ route('dashboard') }}">
             <span class="align-middle">mehmet deneme</span>
         </a>
 
         <ul class="sidebar-nav">
             <li class="sidebar-header">
-                Uygulamalar
+                Menüler
             </li>
 
             <li class="sidebar-item">
@@ -15,9 +15,10 @@
                 </a>
             </li>
 
+     
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
-                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Sayfa İşlemler</span>
+                <a class="sidebar-link" href="{{ route('profile.edit') }}">
+                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profilim</span>
                 </a>
             </li>
 
@@ -27,33 +28,20 @@
                 </a>
             </li>
 
+        
+
+
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-up.html">
-                    <i class="align-middle" data-feather="image"></i> <span class="align-middle">Galeriler</span>
-                </a>
-            </li>
-
-            <li class="sidebar-item ">
-                <a class="sidebar-link" href="pages-blank.html">
-                    <i class="align-middle" data-feather="alert-circle"></i> <span class="align-middle">Popup Yönetimi</span>
-                </a>
-            </li>
-
-
-            <li class="sidebar-item ">
-                <a class="sidebar-link" href="pages-blank.html">
+                <a class="sidebar-link" href="{{ route('settings.index') }}">
                     <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Ayarlar</span>
                 </a>
             </li>
 
-
-            <li class="sidebar-item ">
+            <li class="sidebar-item">
                 <a class="sidebar-link" href="{{ route('users') }}">
                     <i class="align-middle" data-feather="users"></i> <span class="align-middle">Kullanıcı Yönetimi</span>
                 </a>
             </li>
-
-
-
+        </ul>
     </div>
 </nav>

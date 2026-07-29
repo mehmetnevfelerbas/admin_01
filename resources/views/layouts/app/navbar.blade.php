@@ -16,12 +16,13 @@
                         class="text-dark">{{ Auth::user()->name }}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
-                            data-feather="user"></i> Profilim</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i>
+                  <a class="dropdown-item" href="{{ route('profile.edit') }}">
+    <i class="fas fa-user me-2"></i> Profilim
+</a>
+                    <a class="dropdown-item" href="dashboard"><i class="align-middle me-1" data-feather="pie-chart"></i>
                         Dashboard</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i>
+                    <a class="dropdown-item" href="ayarlar"><i class="align-middle me-1" data-feather="settings"></i>
                         Ayarlar</a>
                
                     <div class="dropdown-divider"></div>

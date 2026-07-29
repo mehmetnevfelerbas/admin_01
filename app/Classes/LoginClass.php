@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Hash;
 
 class LoginClass
 {
-   
     public function login(){
         
         try {
@@ -34,6 +33,10 @@ class LoginClass
                 return ["status"=>false,"message"=>"Şifre hatalı."];
             }
 
+            if($user->status != 1){
+                return ["status"=>false,"message"=>"Hesabınız henüz yönetici tarafından onaylanmamıştır."];
+            }
+         
             FacadesAuth::login($user);
 
             if(FacadesAuth::check()){
@@ -45,4 +48,4 @@ class LoginClass
             return ["status"=>false,"message"=>"Giriş işlemi başarısız."];
         }
     }
-}
+}   

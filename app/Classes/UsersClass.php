@@ -41,6 +41,7 @@ class UsersClass
             ]);
         }
     }
+    
 
     public function saveUser()
     {
@@ -53,6 +54,12 @@ class UsersClass
             $password_rep = request()->get('password_rep');
             $status = request()->get('status');
             $user_id = request()->get('user_id');
+
+
+//tlf numara
+            if (strlen($phone) !== 12) {
+                    return ["status" => false, "message" => "Telefon numarası tam 12 haneli olmalıdır."];
+                }
 
             if ($name_surname == null) {
                 return ["status" => false, "message" => "Ad Soyad alanı boş olamaz."];
@@ -103,6 +110,7 @@ class UsersClass
 
                     $user->password = Hash::make($password);
                 }
+
             }
 
 

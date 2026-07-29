@@ -1,6 +1,12 @@
 @extends('layouts.auth.auth')
 
 @section('auth_content')
+<div class="mb-4">
+    <a href="{{ url('/') }}" class="btn btn-light border btn-sm text-secondary fw-semibold d-inline-flex align-items-center gap-2 px-3 py-2 shadow-sm rounded-3">
+        <i class="bi bi-arrow-left fs-6"></i>
+        <span>Ana Sayfaya Dön</span>
+    </a>
+</div>
 <div class="container d-flex flex-column">
     <div class="row vh-100">
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto d-table h-100">
@@ -39,7 +45,7 @@
                     </div>
                 </div>
                 <div class="text-center mb-3">
-                    Henüz hesabınız yok mu? <a href="pages-sign-up.html">Kayıt Ol</a>
+                    Henüz hesabınız yok mu? <a href="{{ route('register') }}">Kayıt Ol</a>
                 </div>
             </div>
         </div>
