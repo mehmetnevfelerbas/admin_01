@@ -43,10 +43,12 @@
             
             <div class="ms-auto d-flex align-items-center gap-2">
                 @auth
-                    <a href="{{ route('login') }}" class="btn btn-outline-light btn-sm px-3 rounded-pill">
-                        <i class="bi bi-speedometer2 me-1"></i> Admin Paneline Git
+                    <!-- Giriş Yapılmışsa (Admin): Panetime Dön Butonu -->
+                    <a href="{{ route('admin.panel') }}" class="btn btn-outline-light btn-sm px-3 rounded-pill">
+                        <i class="bi bi-speedometer2 me-1"></i> Panetime Dön
                     </a>
                 @else
+                    <!-- Giriş Yapılmamışsa (Ziyaretçi): Giriş Yap Butonu -->
                     <a href="{{ route('login') }}" class="btn btn-primary btn-sm px-3 rounded-pill">Giriş Yap</a>
                 @endauth
             </div>
@@ -77,8 +79,6 @@
             @forelse($blogs as $blog)
                 <div class="col-md-4">
                     <div class="card news-card shadow-sm h-100">
-                        
-              
                         <div class="card-body d-flex flex-column p-4">
                             <div class="mb-2">
                                 <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 fw-semibold">Gündem</span>
@@ -103,7 +103,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             @empty

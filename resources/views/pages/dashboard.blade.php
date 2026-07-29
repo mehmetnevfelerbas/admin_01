@@ -9,7 +9,10 @@
             <i class="bi bi-calendar3 me-1"></i> {{ date('d.m.Y') }}
         </span>
     </div>
+<a href="{{ route('home') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">
+    <i class="bi bi-speedometer2 me-2"></i> Haberlere Bak
 
+</a>
     <div class="row g-3 mb-4">
         <div class="col-md-3">
             <div class="card border-0 shadow-sm p-3 border-start border-primary border-4">

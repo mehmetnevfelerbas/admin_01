@@ -49,7 +49,7 @@
                         <tr>
                             <th>Başlık</th>
                             <th>Açıklama</th>
-                            <th>Tip</th> {{-- Blog/Haber --}}
+                            <th>Tip</th> 
                             <th>Durumu</th>
                             <th width="250">İşlem</th>
                         </tr>

@@ -40,6 +40,7 @@
                     <div class="text-muted small mb-3 d-flex align-items-center gap-2">
                         <i class="bi bi-clock"></i> 
                         <span>{{ $blog->created_at ? $blog->created_at->format('d.m.Y H:i') : date('d.m.Y H:i') }}</span>
+                        
                     </div>
 
                     
