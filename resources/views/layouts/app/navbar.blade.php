@@ -13,7 +13,7 @@
 
                 <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                     <img src="/template/static/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span
-                        class="text-dark">Sn.{{ Auth::user()->name }}</span>
+                        class="text-dark">{{ Auth::user()->name }} </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
                     <a class="dropdown-item" href="{{ route('profile.edit') }}">
@@ -22,6 +22,10 @@
                     <a class="dropdown-item" href="dashboard">
                         <i class="align-middle me-1" data-feather="pie-chart"></i> Dashboard
                     </a>
+                   
+                    
+                   
+                   
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="ayarlar">
                         <i class="align-middle me-1" data-feather="settings"></i> Ayarlar

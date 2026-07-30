@@ -36,7 +36,7 @@
                             </span>
                         </div>
 
-                        <h2 class="fw-bold text-secondary mb-3">detay için yöneteticiyle görüşünüz</h2>
+                        <h2 class="fw-bold text-secondary mb-3">detaylar için yöneteticiyle görüşünüz</h2>
                         <p class="text-muted col-md-8 mx-auto mb-4">
                           
                         </p>

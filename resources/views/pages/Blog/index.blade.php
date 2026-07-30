@@ -10,8 +10,9 @@
             <h4 class="">Blog/Haber Listesi</h4>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-            <span class="badge badge-primary bg-primary float-end p-2" style="font-style: italic;font-weight:600">Blog/Haber
-                ile blog ve haber kayıtlarınızı listeleyebilirsiniz.</span>
+           <span class="badge bg-black text-white float-end p-2" style="font-style: italic; font-weight: 700;">
+                Önemli olan bilgidir, bu bilgi hakkında senin ne düşündüğün değil<br>ANNA POLITKOVSKAYA
+            </span>
         </div>
     </div>
     <hr />
@@ -21,8 +22,8 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-8">
                         <a href="{{ route('blog/new') }}"><button type="button" class="btn btn-success min-btn">Yeni Ekle</button></a>
-                        <button type="button" class="btn btn-primary min-btn " >Düzenle</button>
-                        <button type="button" class="btn btn-danger min-btn">Sil</button>
+                       <!-- <button type="button" class="btn btn-primary min-btn " >Düzenle</button>
+                        <button type="button" class="btn btn-danger min-btn">Sil</button>-->
                     </div>
                     <div class="col-sm-12 col-md-2 col-lg-2">
                         <small>Durum</small>

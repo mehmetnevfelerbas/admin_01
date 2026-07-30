@@ -48,12 +48,12 @@
                             <input type="text" class="form-control description" placeholder="Açıklama yazınız." />
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
+                   <!-- <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                             <label class="col-form-label">Kapak Görseli</label>
                             <input type="file" class="form-control " placeholder="Kapak görseli yükleyiniz." />
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                             <label class="col-form-label">Durum *</label>

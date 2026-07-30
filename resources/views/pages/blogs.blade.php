@@ -73,6 +73,10 @@
 
     <div class="container pb-5">
         <div class="row g-4">
+          <span class="badge bg-black text-white float-end p-2" style="font-style: italic; font-weight: 700;">
+        Basın, milletin müşterek sesidir.
+Bir milleti aydınlatma ve irşatta, bir millete muhtaç olduğu fikrî gıdayı vermekte,<BR> hulasa bir milletin hedefi saadet olan müşterek bir istikamette yürümesini teminde, basın başlı başına bir kuvvet, bir mektep, bir rehberdir<br>GAZİ MUSTAFA KEMAL ATATÜRK
+            </span>
             
             @forelse($blogs as $blog)
                 <div class="col-md-4">
@@ -114,7 +118,7 @@
 
     <footer class="bg-white border-top py-4 mt-auto">
         <div class="container text-center text-muted small">
-            &copy; {{ date('Y') }} Mne Haberler. Tüm hakları saklıdır.
+            &copy; {{ date('Y') }} MNE Haberler. Tüm hakları saklıdır.
         </div>
     </footer>
 
