@@ -54,7 +54,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/ayarlar', [PagesController::class, 'settings'])->name('settings.index');
 
 
-Route::get('/logout', function () {
+Route::post('/logout', function () {
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();

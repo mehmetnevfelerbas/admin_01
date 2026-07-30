@@ -16,17 +16,26 @@
                         class="text-dark">{{ Auth::user()->name }}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="{{ route('profile.edit') }}">
-    <i class="fas fa-user me-2"></i> Profilim
-</a>
-                    <a class="dropdown-item" href="dashboard"><i class="align-middle me-1" data-feather="pie-chart"></i>
-                        Dashboard</a>
+                    <a class="dropdown-item" href="{{ route('profile.edit') }}">
+                        <i class="fas fa-user me-2"></i> Profilim
+                    </a>
+                    <a class="dropdown-item" href="dashboard">
+                        <i class="align-middle me-1" data-feather="pie-chart"></i> Dashboard
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="ayarlar"><i class="align-middle me-1" data-feather="settings"></i>
-                        Ayarlar</a>
-               
+                    <a class="dropdown-item" href="ayarlar">
+                        <i class="align-middle me-1" data-feather="settings"></i> Ayarlar
+                    </a>
+                   
                     <div class="dropdown-divider"></div>
-                  <a href="{{ route('logout') }}" class="btn btn-outline-danger btn-sm">Çıkış Yap</a>
+                    
+                    <!-- Çıkış Yap Butonu (Form Olarak) -->
+                    <form action="{{ route('logout') }}" method="POST" class="px-3 py-1">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-danger btn-sm w-100">
+                            <i class="fas fa-sign-out-alt me-1"></i> Çıkış Yap
+                        </button>
+                    </form>
                 </div>
             </li>
         </ul>
