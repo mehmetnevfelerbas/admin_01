@@ -38,17 +38,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold fs-4" href="{{ url('/') }}">
-                <i class="bi bi-newspaper me-2 text-primary"></i>Mne Haberler
+                <i class="bi bi-newspaper me-2 text-primary"></i>MNE Haberler
             </a>
             
             <div class="ms-auto d-flex align-items-center gap-2">
                 @auth
-                    <!-- Giriş Yapılmışsa (Admin): Panetime Dön Butonu -->
                     <a href="{{ route('admin.panel') }}" class="btn btn-outline-light btn-sm px-3 rounded-pill">
-                        <i class="bi bi-speedometer2 me-1"></i> Panetime Dön
+                        <i class="bi bi-speedometer2 me-1"></i> Kullanıcı Sayfasına Dön
                     </a>
                 @else
-                    <!-- Giriş Yapılmamışsa (Ziyaretçi): Giriş Yap Butonu -->
                     <a href="{{ route('login') }}" class="btn btn-primary btn-sm px-3 rounded-pill">Giriş Yap</a>
                 @endauth
             </div>
@@ -57,7 +55,7 @@
 
     <div class="hero-section text-center mb-5">
         <div class="container">
-            <h1 class="fw-bold mb-3">Güncel Haberler & Duyurular</h1>
+            <h1 class="fw-bold mb-3">Güncel Haberler</h1>
             <p class="text-white-50 fs-5 mb-4">Sitemizdeki en son gelişmeleri ve haberleri buradan takip edebilirsiniz.</p>
             
             <div class="row justify-content-center">
@@ -92,10 +90,9 @@
                                 {{ Str::limit(strip_tags($blog->translate->description ?? ''), 90) }}
                             </p>
 
-                            <!-- Alt Bilgi (Tarih ve Detay Linki) -->
-                            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
-                                <span class="small text-muted">
-                                    <i class="bi bi-clock me-1"></i>{{ $blog->created_at ? $blog->created_at->format('d.m.Y') : date('d.m.Y') }}
+                                       <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                                          <span class="small text-muted">
+                                               <i class="bi bi-clock me-1"></i>{{ $blog->created_at ? $blog->created_at->format('d.m.Y') : date('d.m.Y') }}
                                 </span>
                                 
                                 <a href="{{ route('news.detail', $blog->id) }}" class="btn btn-link text-primary text-decoration-none fw-semibold p-0 small">

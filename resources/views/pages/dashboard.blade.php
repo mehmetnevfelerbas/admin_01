@@ -74,7 +74,7 @@
     <div class="row g-3">
         <div class="col-md-8">
             <div class="card border-0 shadow-sm p-4 h-100">
-                <h5 class="fw-bold mb-3">Aylık Kullanıcı Kayıt Grafiği</h5>
+                <h5 class="fw-bold mb-3">Aylık Kullanıcı  Grafiği</h5>
                 <canvas id="lineChart" style="max-height: 300px;"></canvas>
             </div>
         </div>
@@ -96,7 +96,7 @@
     <div class="col-12">
         <div class="card border-0 shadow-sm rounded-4 p-4">
             <h5 class="fw-bold text-dark mb-4">
-                <i class="bi bi-bar-chart-line-fill text-primary me-2"></i>Haber Beğeni / Beğenmeme İstatistikleri
+                <i class="bi bi-bar-chart-line-fill text-primary me-2"></i>Haber Beğeni  İstatistikleri
             </h5>
             <div style="height: 350px; position: relative;">
                 <canvas id="reactionChart"></canvas>

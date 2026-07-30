@@ -29,7 +29,6 @@
                    
                     <div class="dropdown-divider"></div>
                     
-                    <!-- Çıkış Yap Butonu (Form Olarak) -->
                     <form action="{{ route('logout') }}" method="POST" class="px-3 py-1">
                         @csrf
                         <button type="submit" class="btn btn-outline-danger btn-sm w-100">
