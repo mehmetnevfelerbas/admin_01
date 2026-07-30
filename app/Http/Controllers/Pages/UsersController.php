@@ -44,10 +44,8 @@ class UsersController
    
     public function updateProfile(Request $request)
     {
-        // Giriş yapan aktif kullanıcıyı doğrudan alıyoruz
         $user = auth()->user();
 
-        // Formdan gelen verileri doğrulama ve güncelleme
         $user->name = $request->input('name');
         $user->email = $request->input('email');
         
