@@ -6,8 +6,9 @@
             <h4 class="">Kullanıcı Listesi</h4>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-            <span class="badge badge-primary bg-primary float-end p-2" style="font-style: italic;font-weight:600">
-                Gazetecilik başkasının basılmasını istemediği şeyi basmaktır;<BR> bunun dışında geriye kalan herşey halk ilişkileridir.<br>GEORGE ORWELL</span>
+<span class="badge bg-black text-white float-end p-2" style="font-style: italic; font-weight: 700;">
+    
+    Gazetecilik başkasının basılmasını istemediği şeyi basmaktır;<BR> bunun dışında geriye kalan herşey halk ilişkileridir.<br>GEORGE ORWELL</span>
 
         </div>
     </div>
