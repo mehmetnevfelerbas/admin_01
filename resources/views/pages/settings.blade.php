@@ -13,7 +13,7 @@
         <div class="container">
             <a class="navbar-brand fw-bold" href="dashboard">Mne Yönetim</a>
             <div class="ms-auto">
-                <a href="{{ route('dashboard') }}" class="btn btn-warning btn-sm fw-bold">Panoya Dön</a>
+                <a href="{{ route('dashboard') }}" class="btn btn-warning btn-sm fw-bold">Anasayfaya Dön</a>
                 <a href="{{ route('visitor.blogs') }}" class="btn btn-warning btn-sm fw-bold">Siteyi Gör</a>
                 <a href="{{route("users")}}" class="btn btn-warning btn-sm fw-bold">Kullanıcı Menüsü</a>
             </div>

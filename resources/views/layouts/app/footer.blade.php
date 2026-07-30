@@ -4,7 +4,7 @@
             <div class="col-6 text-start">
                 <p class="mb-0">
                   
-                    <a class="deneme1" href="#" target="_blank"><strong>MEHMET NEVFEL </strong></a> <a class="deneme1" href="#" target="_blank"></a>&copy;
+                    <a class="deneme1" href="#" target="_blank"><strong>MEHMET NEVFEL &copy</strong></a> <a class="deneme1" href="#" target="_blank"></a>___
                
                     <a class="deneme" target="blank" ><strong>DENEME &copy</strong>
                 </p>
